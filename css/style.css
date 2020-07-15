@@ -7,7 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 20px auto;
+    margin: 0 auto;
     text-align: center;
     background-color: khaki;
 }
@@ -19,31 +19,41 @@ header h1 {
 section {
     background-color: darkslateblue;
     min-width: 700px;
-    height: 150px;
+    height: auto;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2px;
     align-items: center;
 }
+section h1 {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
-section #number {
+section #number, #metros {
     height: 26px;
     padding: 8px;
     outline: none;
 }
 
-section #button, #reset {
+.botoes {
+    margin-top: 20px;
+}
+
+section #button, #reset, #button2, #reset2 {
     height: 26px;
+    margin-bottom: 20px;
     border-radius: 6px;
     width: 60px;
     background-color: lightsalmon;
 }
 
-section .mensagem {
+section .mensagem, .mensagem2{
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-section .mensagem p {
+section .mensagem, .mensagem2 p {
     font-size: 18px;
     color: white;
 }
